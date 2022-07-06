@@ -1,0 +1,90 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container{
+  width: 450px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: rgb(0, 245, 245);
+  position: absolute;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0 ,0 ,0 ,0.3);
+}
+
+.head{
+  width: 100%;
+  background-color: rgb(0, 255, 255);
+  /* background-color: red; */
+  min-height: 15%;
+  height: 20%;
+  max-height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.body{
+  width: 100%;
+  min-height: 85%;
+  height: 80%;
+  max-height: 75%;
+  /* background-color: green; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+ul{
+  list-style: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  column-gap: 10%;
+  row-gap: 40%;
+  position: absolute;
+  left: -4%;
+  top: 10%;
+}
+li{
+  background-color:  #fff ;
+  box-shadow: 0 5px 10px rgba(0 ,0 ,0 ,0.3);
+  padding: 10%;
+  width: 80%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+li:hover{
+  outline: 3px solid rgb(59, 145, 145);
+}
+
+.totalquestions{
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  text-transform: capitalize;
+}
+li:active{
+  background-color: rgba(0,0,0,0.2);
+  transition:  all 200ms;
+}
+
+.modal.fade.show{
+  display: block;
+}
+.btn.btn-danger:active ~ #modal7{
+  display: none;
+}
